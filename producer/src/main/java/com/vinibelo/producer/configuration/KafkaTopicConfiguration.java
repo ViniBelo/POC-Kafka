@@ -27,6 +27,7 @@ public class KafkaTopicConfiguration {
     public NewTopic topicTest() {
         return TopicBuilder.name("Test_topic")
                 .partitions(3)
+                .replicas(3)
                 .build();
     }
 
@@ -34,6 +35,7 @@ public class KafkaTopicConfiguration {
     public NewTopic testTopic() {
         return TopicBuilder.name("Topic_test")
                 .partitions(2)
+                .replicas(1)
                 .build();
     }
 }

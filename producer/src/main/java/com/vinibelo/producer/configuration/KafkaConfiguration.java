@@ -30,7 +30,7 @@ public class KafkaConfiguration {
 
     @Bean
     public int id() {
-        return 0;
+        return 1;
     }
 
     @Bean
